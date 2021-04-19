@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Age <= 41.5\ngini = 0.459\nsamples = 320\nvalue = [206, 114]", fillcolor="#f3c7a7"] ;
+1 [label="EstimatedSalary <= 90500.0\ngini = 0.256\nsamples = 219\nvalue = [186, 33]", fillcolor="#ea975c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 36.5\ngini = 0.042\nsamples = 185\nvalue = [181, 4]", fillcolor="#e6843d"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 4 ;
+31 [label="Age <= 26.5\ngini = 0.251\nsamples = 34\nvalue = [5, 29]", fillcolor="#5baee9"] ;
+1 -> 31 ;
+32 [label="(...)", fillcolor="#C0C0C0"] ;
+31 -> 32 ;
+33 [label="(...)", fillcolor="#C0C0C0"] ;
+31 -> 33 ;
+46 [label="Age <= 46.5\ngini = 0.318\nsamples = 101\nvalue = [20, 81]", fillcolor="#6ab5eb"] ;
+0 -> 46 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+47 [label="EstimatedSalary <= 85000.0\ngini = 0.487\nsamples = 31\nvalue = [13, 18]", fillcolor="#c8e4f8"] ;
+46 -> 47 ;
+48 [label="(...)", fillcolor="#C0C0C0"] ;
+47 -> 48 ;
+63 [label="(...)", fillcolor="#C0C0C0"] ;
+47 -> 63 ;
+72 [label="EstimatedSalary <= 42500.0\ngini = 0.18\nsamples = 70\nvalue = [7, 63]", fillcolor="#4fa8e8"] ;
+46 -> 72 ;
+73 [label="(...)", fillcolor="#C0C0C0"] ;
+72 -> 73 ;
+74 [label="(...)", fillcolor="#C0C0C0"] ;
+72 -> 74 ;
+}
